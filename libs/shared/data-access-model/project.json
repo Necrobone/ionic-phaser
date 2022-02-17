@@ -1,0 +1,28 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/data-access-model",
+  "sourceRoot": "libs/shared/data-access-model/src",
+  "prefix": "company-name",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/shared/data-access-model"
+      ],
+      "options": {
+        "jestConfig": "libs/shared/data-access-model/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/data-access-model/src/**/*.ts",
+          "libs/shared/data-access-model/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
